@@ -1,0 +1,22 @@
+
+
+.barra-negra {
+    background-image: url(../img-atencion-cliente/barra-negra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.396);
+    margin: 10px 0; /* Corregido para margen */
+}
+
+.img-container {
+    width: 100%; /* O el tamaño que prefieras */
+    max-width: 500px; /* Ajusta el máximo ancho deseado */
+    overflow: hidden; /* Opcional: para evitar que la imagen se desborde del contenedor */
+}
+
+.img-container img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
