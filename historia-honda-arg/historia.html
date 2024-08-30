@@ -6,21 +6,32 @@
     <title>Historia Honda Argentina</title>
     
     <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/historiahonda.css">
+    <link rel="stylesheet" href="../sass/historiahonda.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 
+
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="../imagenes/hondasinfondo.png" alt="Logo de Honda" width="70" height="90" class="d-inline-block align-text-top">
-                </a>
+              <a class="navbar-brand" href="#"><img src="../imagenes/hondasinfondo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#galeria">Galería</a>
+                  </li>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
 
     <div class="container mt-4">
@@ -28,7 +39,7 @@
         <div class="card mb-3">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../img-historia-honda/honda-arg.jpg" class="img-fluid rounded-start" alt="Planta de Honda en Campana">
+                    <img src="img-hisotoria-honda/honda-historia.arg.jpg" class="img-fluid rounded-start" alt="Planta de Honda en Campana">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -47,11 +58,14 @@
 
         <!-- Barra Negra -->
         <div class="barra-negra"></div>
-
-        <!-- Imagen adicional -->
-        <img src="../img-historia-honda/honda-historia-motos.jpg" class="img-fluid mb-3" alt="Imagen de motocicletas Honda">
-
         <!-- Tarjeta de Cronología -->
+        <!-- Imagen adicional -->
+        <img src="img-hisotoria-honda/honda-historia-motos.jpg" class="img-fluid mb-3" alt="Imagen de motocicletas Honda">
+
+<!-- Barra Negra -->
+<div class="barra-negra"></div>
+<!-- Tarjeta de Cronología -->
+        
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Cronología Honda en Argentina</h5>
@@ -74,10 +88,62 @@
                 <h4>2011</h4>
                 <p>Comienza la producción de automóviles en la planta de Campana. Meses después se comienza con la producción de motocicletas.</p>
             </div>
-            <img src="../img-historia-honda/honda-historia.arg.jpg" class="img-fluid rounded-bottom" alt="Imagen histórica de Honda">
+            <img src="img-hisotoria-honda/honda-arg.jpg" class="img-fluid rounded-bottom" alt="Imagen histórica de Honda">
         </div>
     </div>
 
+<!-- Barra Negra -->
+<div class="barra-negra"></div>
+<!-- Tarjeta de Cronología -->
+
+
+    <section id="galeria">
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img-hisotoria-honda/motos-honda-galeria.jpg" class="card-img-top" alt="motos honda">
+            <div class="card-body">
+              <h5 class="card-title">HONDA ESTUVO PRESENTE EN EL MOTOGP CON SUS MODELOS DESTACADOS Y EL FOCO EN LA SEGURIDAD</h5>
+              <p class="card-text">Una nueva carrera del principal campeonato de dos ruedas tuvo lugar en Santiago del Estero, en donde la compañía exhibió su line up de motocicletas y realizó actividades especiales para promover la conducción responsable..</p>
+              <p>Honda Motor de Argentina estuvo presente en la segunda fecha del MotoGP, la máxima competencia mundial de motociclismo de velocidad que se disputó del 31 de marzo al 2 de abril en el Autódromo Internacional Termas de Río Hondo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img-hisotoria-honda/honda-bike-galeria.jpg" class="card-img-top" alt="honda superbike">
+            <div class="card-body">
+              <h5 class="card-title">HONDA SE DESTACÓ EN EL SUPERBIKE ARGENTINO</h5>
+              <p class="card-text">La marca alcanzó importantes resultados en las distintas categorías en las que participó el equipo oficial HONDA YPF SBK: Bautista Farias se consagró campeón en la Junior Cup, mientras que Maxi Rocha, integró el top 5 de la máxima categoría</p>
+              <p>Con el espíritu de competencia que caracteriza a Honda desde sus inicios, la marca del ala dorada estuvo presente en el Superbike Argentino, la categoría más tecnológica y veloz de Latinoamérica, con el equipo oficial HONDA YPF SBK. Así, sigue apostando al desarrollo deportivo donde actualmente cuenta con el apoyo de YPF como parte de la alianza que sellaron ambas compañías a comienzos de año.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img-hisotoria-honda/honda-autos-galeria.jpg" class="card-img-top" alt="Honda Motor de Argentina">
+            <div class="card-body">
+              <h5 class="card-title">Honda Motor de Argentina presente en el Salón Internacional del Automóvil en Buenos Aires</h5>
+              <p class="card-text">Allí exhibe su portfolio completo de automóviles, como también las últimas novedades en materia de motocicletas..</p>
+              <p>Honda Motor de Argentina participa una vez más del evento más relevante de la industria automotriz en el país: el 8º Salón Internacional del Automóvil de Buenos Aires. Bajo el lema “Nuevos Sueños, Nuevas Emociones”, el stand de la compañía se ubica en el pabellón verde del Predio Ferial La Rural y cuenta con 946 m2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img-hisotoria-honda/honda-provedores-galeria.jpg" class="card-img-top" alt="provedores de la division de motos">
+            <div class="card-body">
+              <h5 class="card-title">La compañía destacó su labor en términos de excelencia calidad como también en el cumplimiento de las entregas.</h5>
+              <p class="card-text">En el marco de un evento realizado en la planta productiva ubicada en la localidad de Campana, Honda Motor de Argentina destacó el trabajo de sus mejores proveedores a lo largo del último año en lo que respecta a la división motocicletas. Para ello, seleccionó a tres empresas en la categoría “Excelencia en Calidad” y tres en la categoría “Excelencia en Logística”. Además, hubo mención especial respecto al acompañamiento en los proyectos de localización.</p>
+              <p>“Trabajar en equipo junto a los proveedores es una condición fundamental para Honda Motor de Argentina, son ellos quienes nos ayudan a producir en Argentina las motocicletas de la más alta calidad, y por tal motivo queremos reconocer su trabajo y premiarlos”,</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

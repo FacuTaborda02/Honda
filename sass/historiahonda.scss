@@ -1,0 +1,167 @@
+// Variables
+$navbar-bg: #f8f9fa;
+$card-title-font-size: 1.5rem;
+$card-text-font-size: 1rem;
+$barra-negra-bg-image: url('../img-atencion-cliente/barra-negra.jpg');
+$footer-card-img-height-lg: 200px; // Altura grande para imágenes del footer en pantallas grandes
+$footer-card-img-height-md: 150px; // Altura media para imágenes del footer en pantallas medianas
+$footer-card-img-height-sm: 120px; // Altura pequeña para imágenes del footer en pantallas pequeñas
+
+
+// Variables
+$navbar-brand-logo-width: 100px; // Tamaño del logo en pantallas grandes
+$navbar-brand-logo-width-sm: 100px; // Tamaño del logo en pantallas pequeñas
+
+// Header y Navbar
+header {
+    background: $navbar-bg;
+    padding: 1rem;
+
+    .navbar-brand {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: $navbar-brand-logo-width; // Tamaño del logo en pantallas grandes
+            height: auto; // Mantiene la proporción del logo
+        }
+    }
+}
+
+// Responsividad
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: $navbar-brand-logo-width-sm; // Tamaño del logo en pantallas medianas
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        max-width: $navbar-brand-logo-width-sm; // Ajuste adicional para dispositivos muy pequeños
+    }
+}
+
+
+// Reseteo de márgenes y padding
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilos básicos
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+// Header y Navbar
+header {
+    background: $navbar-bg;
+    padding: 1rem;
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+}
+
+// Barra Negra
+.barra-negra {
+    background: {
+        image: $barra-negra-bg-image;
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    };
+    height: 25vh;
+    margin: 1rem 0; // Añadido margen para separar del contenido
+}
+
+// Tarjetas
+.card {
+    margin-bottom: 1.5rem;
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: $card-title-font-size;
+    }
+
+    .card-text {
+        font-size: $card-text-font-size;
+    }
+
+    .card-img-top, .card-img-bottom {
+        width: 100%;
+        height: auto;
+        border-radius: .4rem;
+    }
+}
+
+// Imágenes fluidas
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+// Footer
+footer {
+    .card {
+        .card-img-top {
+            height: $footer-card-img-height-lg; // Altura para pantallas grandes
+            object-fit: cover; // Ajusta la imagen para que cubra el área sin distorsionar
+        }
+    }
+}
+
+// Responsividad
+@media (max-width: 768px) {
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .barra-negra {
+        height: 20vh;
+    }
+
+    footer {
+        .card-img-top {
+            height: $footer-card-img-height-md; // Ajuste para pantallas medianas
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 0.25rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.9rem;
+    }
+
+    .barra-negra {
+        height: 15vh;
+    }
+
+    footer {
+        .card-img-top {
+            height: $footer-card-img-height-sm; // Ajuste adicional para dispositivos muy pequeños
+        }
+    }
+}

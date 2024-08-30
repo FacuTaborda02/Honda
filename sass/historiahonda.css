@@ -1,0 +1,115 @@
+header {
+  background: #f8f9fa;
+  padding: 1rem;
+}
+header .navbar-brand {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+header .navbar-brand img {
+  max-width: 100px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 100px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    max-width: 100px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #f8f9fa;
+  padding: 1rem;
+}
+header .navbar-brand {
+  font-weight: bold;
+}
+
+.barra-negra {
+  background-image: url("../img-atencion-cliente/barra-negra.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25vh;
+  margin: 1rem 0;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-title {
+  font-size: 1.5rem;
+}
+.card .card-text {
+  font-size: 1rem;
+}
+.card .card-img-top, .card .card-img-bottom {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+footer .card .card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    padding: 0.5rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .barra-negra {
+    height: 20vh;
+  }
+  footer .card-img-top {
+    height: 150px;
+  }
+}
+@media (max-width: 576px) {
+  .card-body {
+    padding: 0.25rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .navbar-brand {
+    font-size: 0.9rem;
+  }
+  .barra-negra {
+    height: 15vh;
+  }
+  footer .card-img-top {
+    height: 120px;
+  }
+}/*# sourceMappingURL=historiahonda.css.map */
