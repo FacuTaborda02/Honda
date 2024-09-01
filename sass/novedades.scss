@@ -1,0 +1,38 @@
+// Archivo SCSS: styles.scss
+
+// Variables
+$background-color: #000000; // Color de fondo: negro
+$carousel-height: 500px; // Altura del carrusel
+$control-filter: invert(100%); // Filtro para los controles del carrusel
+
+// Estilo para el fondo de la página
+.background {
+  background-color: $background-color;
+  height: 100vh; // Ajusta la altura para cubrir toda la ventana del navegador
+  width: 100%; // Cubre todo el ancho del contenedor
+}
+
+// Estilos para el carrusel
+.carousel-inner {
+  width: 100%;
+  height: $carousel-height; // Altura del carrusel definida por la variable
+}
+
+// Estilos para las imágenes dentro de los ítems del carrusel
+.carousel-item {
+  img {
+    width: 100%; // Asegura que las imágenes llenen el ancho del contenedor
+    height: 100%; // Asegura que las imágenes llenen la altura del contenedor
+    object-fit: cover; // Mantiene la proporción de la imagen y la ajusta al contenedor
+  }
+}
+
+// Estilos para los controles del carrusel
+.carousel-control-prev,
+.carousel-control-next {
+  filter: $control-filter; // Aplica el filtro de color a los controles del carrusel
+}
+
+body{
+  margin: auto;
+}

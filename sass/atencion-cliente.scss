@@ -1,0 +1,29 @@
+// Variables
+$black-color: rgb(0, 0, 0);
+$background-image-url: '../img-atencion-cliente/barra-negra.jpg';
+$background-color-opacity: rgba(0, 0, 0, 0.294);
+$bar-height: 70px;
+$bar-margin: 20px 0;
+$bar-height-dos: 350px;
+
+// Estilos
+.barra-negra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $bar-height;
+  background-color: $black-color;
+  font-weight: 600;
+  padding: 0 10px; // Ajusta el relleno para los elementos de contacto
+  margin: $bar-margin; // Corregido para margen
+}
+
+.barra-negra-dos {
+  background-image: url(#{$background-image-url});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: $bar-height-dos;
+  background-color: $background-color-opacity;
+  margin: $bar-margin; // Corregido para margen
+}
