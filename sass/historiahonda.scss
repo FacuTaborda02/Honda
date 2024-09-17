@@ -29,7 +29,7 @@ header {
     }
 }
 
-// Responsividad
+
 @media (max-width: 768px) {
     .navbar-brand img {
         max-width: $navbar-brand-logo-width-sm; // Tamaño del logo en pantallas medianas
@@ -161,7 +161,7 @@ footer {
 
     footer {
         .card-img-top {
-            height: $footer-card-img-height-sm; // Ajuste adicional para dispositivos muy pequeños
+            height: $footer-card-img-height-sm; // Ajuste adicional para dispositivos pequeños
         }
     }
 }
